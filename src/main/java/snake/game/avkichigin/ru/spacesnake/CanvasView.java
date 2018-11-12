@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 public class CanvasView extends View {
-    private static final int COLOR= Color.BLUE;
+    private static final int COLOR = Color.BLUE;
 
     public CanvasView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -19,10 +19,10 @@ public class CanvasView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        Paint paint=new Paint();
+        Paint paint = new Paint();
         paint.setColor(COLOR);
         canvas.drawCircle(100, 100, 30, paint);
 
-        
+
     }
 }
